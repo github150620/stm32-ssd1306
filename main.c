@@ -1,7 +1,7 @@
 /*
  * Hardware Connection:
  *
- *   STM32F104C8T6               SSD1306
+ *   STM32F104C8T6              SSD1306
  *  +-------------+            +-------+
  *  |             |            |       |
  *  |          PB10 <--------> SDA     |
@@ -390,8 +390,8 @@ int main(void) {
 	//SSD1306_WriteCmd(0x12);
 	
 	// Set Vcomh Deselect Level
-	SSD1306_WriteCmd(0xDB);
-	SSD1306_WriteCmd(0x40);
+	//SSD1306_WriteCmd(0xDB);
+	//SSD1306_WriteCmd(0x20);
 	
 	// Set Display with RAM or NOT
 	//SSD1306_WriteCmd(0xA4);
